@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.cc</groupId>
@@ -5,4 +6,121 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>com.cc.SimpleUtil</name>
   <description>Java日常工具类</description>
+  
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- spring版本号 -->
+		<spring-version>4.2.0.RELEASE</spring-version>
+		<!-- mybatis版本号 -->
+		<mybatis-version>3.2.8</mybatis-version>
+		<!-- junit版本号 -->
+		<junit-version>4.12</junit-version>
+        <servlet-version>2.5</servlet-version>
+        <jsp-version>2.2</jsp-version>
+        <jstl-version>1.2</jstl-version>
+        <freemarker-version>2.3.23</freemarker-version>
+        <jackson-version>2.8.1</jackson-version>
+        <gson-version>2.5</gson-version>
+        <xml-apis-version>2.0.2</xml-apis-version>        
+        <aspectj-version>1.8.6</aspectj-version>
+        <httpcomponents-version>4.5.1</httpcomponents-version>
+        <commons-httpclient-version>3.1</commons-httpclient-version>
+        <httpclient-cache-version>4.5.1</httpclient-cache-version>
+        <shiro-version>1.3.2</shiro-version>
+	</properties>
+  
+    <!-- 構建設置 -->
+	<build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+         </plugins>
+	</build>
+	
+	<!-- 依赖包 -->
+	<dependencies>
+		<!-- spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+		
+		<!-- servlet -->
+		<dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>${servlet-version}</version>
+            <scope>provided</scope>
+        </dependency>      
+          
+        <!-- Logging -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+        <dependency>  
+		    <groupId>org.logback-extensions</groupId>  
+		    <artifactId>logback-ext-spring</artifactId>  
+		    <version>0.1.4</version>  
+		</dependency> 
+		
+		<!-- SCP -->
+		<dependency>
+		    <groupId>ch.ethz.ganymed</groupId>
+		    <artifactId>ganymed-ssh2</artifactId>
+		    <version>build210</version>
+		</dependency>
+		
+		<!--Apache Shiro所需的jar包-->    
+		<dependency>    
+		  <groupId>org.apache.shiro</groupId>    
+		  <artifactId>shiro-core</artifactId>    
+		  <version>${shiro-version}</version>    
+		</dependency>    
+		<dependency>    
+		  <groupId>org.apache.shiro</groupId>    
+		  <artifactId>shiro-web</artifactId>    
+		  <version>${shiro-version}</version>    
+		</dependency>    
+		<dependency>    
+		  <groupId>org.apache.shiro</groupId>    
+		  <artifactId>shiro-spring</artifactId>    
+		  <version>${shiro-version}</version>    
+		</dependency>   
+		
+		<!-- redis缓存 -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.7.2</version>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>
+		
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.4</version>
+		</dependency>
+	</dependencies>
 </project>
