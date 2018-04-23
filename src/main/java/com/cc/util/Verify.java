@@ -3,9 +3,10 @@ package com.cc.util;
 import java.util.regex.Pattern;
 
 /**
-* @Description 参数格式验证
-* @author cc_2471082434@qq.com  
-* @date 2016年8月1日 下午2:54:15
+ * 参数格式验证
+ * 
+ * @author chencheng0816@gmail.com 
+ * @date 2016年10月28日 上午10:02:43
  */
 public class Verify {
 

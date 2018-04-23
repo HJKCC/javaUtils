@@ -22,7 +22,7 @@ import com.cc.vo.BaseReturnListVO;
 import com.cc.vo.ResInfoVO;
 
 /**
- * 功能：调用c++接口socket客户端
+ * 通过socket调用服务端接口
  * 
  * @author chencheng0816@gmail.com 
  * @date 2016年10月28日 上午10:02:43

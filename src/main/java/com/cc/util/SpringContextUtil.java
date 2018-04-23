@@ -7,6 +7,9 @@ import org.springframework.context.ApplicationContextAware;
 
 /**
  * 静态获取Bean 
+ * 
+ * @author chencheng0816@gmail.com 
+ * @date 2016年10月28日 上午10:02:43
  */
 public class SpringContextUtil implements ApplicationContextAware {
 	private static ApplicationContext applicationContext; 

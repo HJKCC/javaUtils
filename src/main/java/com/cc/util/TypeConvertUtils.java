@@ -1,9 +1,10 @@
 package com.cc.util;
 
 /**
-* java类型转换工具类
-* @author cc_2471082434@qq.com 
-* @date 2016年10月28日 上午11:16:10
+ * java类型转换工具类
+ * 
+ * @author chencheng0816@gmail.com 
+ * @date 2016年10月28日 上午10:02:43
  */
 public class TypeConvertUtils {
 	

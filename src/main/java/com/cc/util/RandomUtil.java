@@ -3,7 +3,7 @@ package com.cc.util;
 import java.util.Random;
 
 /**
- * 随机数工具类
+ * 随机数处理类
  *
  * @author chencheng0816@gmail.com 
  * @date 2018年4月23日 下午5:20:58

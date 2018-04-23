@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * spring分页工具类
+ * 分页工具类
  *
  * @author chencheng0816@gmail.com
  * @date 2018年4月23日 下午4:29:32
